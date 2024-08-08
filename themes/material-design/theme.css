@@ -1379,14 +1379,17 @@ a:hover
 }
 
 /*Content View*/
+.container-for-content-view-module {
+	margin-right: 10px
+}
 
 .content-view-module
 {
 	width: calc(100% - 4px);
 	overflow-x: hidden;
 	display: grid;
-	grid-template-columns: repeat(auto-fill, 166px);
-	justify-content: space-between;
+	grid-template-columns: repeat(auto-fill, 300px);
+	justify-content: space-evenly;
 }
 
 @media(max-width: 540px)
@@ -1399,19 +1402,19 @@ a:hover
 
 .content-view-module > div
 {
-	width: 150px;
-	height: 273px;
+	width: 300px;
+	height: 500px;
 	margin: 16px 0px 16px 16px;
 	margin: 8px -8px 8px 8px;
 	padding: 8px;
 	content-visibility: auto;
-	contain-intrinsic-size: 150px 273px;
+	contain-intrinsic-size: 300px 500px;
 }
 
 .content-view-module .v-folder
 {
-	width: 150px;
-	height: 225px;
+	width: 300px;
+	height: 450px;
 	border-radius: 12px;
 	background-color: var(--md-sys-color-surface-container);
 	/*border: 1px solid var(--md-sys-color-outline-variant);*/
@@ -1479,8 +1482,8 @@ a:hover
 
 .content-view-module .v-img
 {
-	width: 150px;
-	height: 225px;
+	width: 300px;
+	height: 450px;
 	cursor: pointer;
 	text-align: center;
 	position: relative;
@@ -1491,8 +1494,8 @@ a:hover
 
 .content-view-module .v-img img
 {
-	max-width: 150px;
-	max-height: 225px;
+	max-width: 300px;
+	max-height: 450px;
 	display: block;
 	border-radius: 12px;
 	background-color: #fff;
@@ -1576,7 +1579,7 @@ a:hover
 .content-view-module .v-text
 {
 	height: 48px;
-	width: 150px;
+	width: 300px;
 	line-height: 48px;
 	text-align: center;
 	text-overflow: ellipsis;
@@ -1587,9 +1590,9 @@ a:hover
 
 .content-view-module .folder-images
 {
-	width: 60px;
-	height: 97px;
-	margin: 10px 0px 0px 10px;
+	width: 120px;
+	height: 192px;
+	margin: 20px 0px 0px 20px;
 	background-size: 100%;
 	background-position: 50%;
 	border-radius: 4px;
@@ -1603,8 +1606,8 @@ a:hover
 
 .content-view-module .folder-images > img
 {
-	max-width: 60px;
-	max-height: 97px;
+	max-width: 120px;
+	max-height: 192px;
 	display: inline-block;
 	vertical-align: middle;
 	border-radius: 6px;
